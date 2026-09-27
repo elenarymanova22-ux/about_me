@@ -1,0 +1,363 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Елена — финансовый аналитик и консультант по управленческому учету</title>
+<meta name="description" content="Финансовый аналитик и консультант по управленческому учету. Управленческий учет, анализ бизнеса, контроль расчетов, налоговый учет, автоматизация. Удаленно и гибридно.">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --text: #1f2733;
+    --text-muted: #5a6675;
+    --accent: #1f5f8b;
+    --accent-soft: #e8f0f6;
+    --border: #e2e6ec;
+    --radius: 14px;
+    --maxw: 880px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background: linear-gradient(160deg, #1f5f8b 0%, #17456a 100%);
+    color: #fff;
+    padding: 72px 0 64px;
+  }
+  .hero .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.2;
+    margin: 0 0 10px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .hero .subtitle {
+    font-size: clamp(17px, 2.4vw, 20px);
+    margin: 0 0 26px;
+    color: rgba(255,255,255,0.88);
+  }
+  .hero .lead {
+    font-size: 17px;
+    color: rgba(255,255,255,0.9);
+    max-width: 640px;
+    margin: 0 0 14px;
+  }
+  .hero .lead:last-of-type { margin-bottom: 0; }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--border); }
+
+  h2 {
+    font-size: clamp(22px, 3.4vw, 28px);
+    margin: 0 0 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- SERVICE CARDS ---------- */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    .cards .card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 22px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .card p { margin: 0; color: var(--text); }
+  .card .benefit {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border);
+    font-size: 15.5px;
+    color: var(--text-muted);
+  }
+  .card .benefit strong { color: var(--text); }
+
+  /* ---------- REMOTE BLOCK ---------- */
+  .remote-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) {
+    .remote-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .remote-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .remote-item h3 {
+    font-size: 16px;
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+  .remote-item p { margin: 0; color: var(--text-muted); font-size: 15.5px; }
+
+  /* ---------- PAIN POINTS ---------- */
+  .pain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .pain li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-style: italic;
+    color: var(--text);
+  }
+  .pain-note {
+    margin: 24px 0 0;
+    font-size: 16px;
+    color: var(--text-muted);
+  }
+
+  /* ---------- FORMATS ---------- */
+  .formats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .formats li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+  }
+  .formats strong { color: var(--accent); }
+  .formats .note {
+    margin: 22px 0 0;
+    font-size: 16px;
+    color: var(--text-muted);
+  }
+
+  /* ---------- CONTACTS ---------- */
+  .contacts { background: var(--accent-soft); }
+  .contacts p.cta {
+    font-size: 18px;
+    margin: 0 0 26px;
+    max-width: 640px;
+  }
+  .contact-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contact-links a {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15.5px;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .contact-links a:hover,
+  .contact-links a:focus-visible {
+    background: #17456a;
+    transform: translateY(-1px);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    padding: 28px 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Удаленно · Гибридно</span>
+    <h1>Елена — финансовый аналитик и консультант по управленческому учету</h1>
+    <p class="subtitle">Наведу порядок в цифрах, чтобы вы видели реальную картину бизнеса</p>
+    <p class="lead">Меня зовут Елена. Я специализируюсь на финансовом анализе, бухгалтерском и управленческом учете. Помогаю собственникам и руководителям перестать догадываться о состоянии дел и начать принимать решения на основе точных цифр.</p>
+    <p class="lead">Работаю удаленно и в гибридном формате. Выстраиваю процессы так, чтобы вам не нужно было контролировать каждый шаг, а результаты были прозрачными и своевременными.</p>
+  </div>
+</header>
+
+<main>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Чем я могу быть полезна</h2>
+      <div class="cards">
+
+        <article class="card">
+          <h3>Управленческий учет</h3>
+          <p>Внедряю оперативный ДДС (движение денежных средств), ОФР (отчет о финансовых результатах) и баланс. Вы будете видеть доходы, реальную прибыль и структуру расходов — без задержек и «слепых зон».</p>
+          <p class="benefit"><strong>Что это дает:</strong> вы перестаете узнавать о кассовых разрывах постфактум. У вас появляется ежемесячная картина, на которую можно опереться.</p>
+        </article>
+
+        <article class="card">
+          <h3>Анализ бизнеса</h3>
+          <p>Определяю прибыльные и убыточные направления, анализирую финансовое состояние компании, оцениваю кредитные и налоговые риски.</p>
+          <p class="benefit"><strong>Что это дает:</strong> вы понимаете, какие направления тянут бизнес вниз, а какие стоит развивать. Решения о ценах, ассортименте и ресурсах становятся обоснованными, а не интуитивными.</p>
+        </article>
+
+        <article class="card">
+          <h3>Контроль расчетов</h3>
+          <p>Контролирую дебиторскую и кредиторскую задолженность, выявляю проблемные долги на ранней стадии.</p>
+          <p class="benefit"><strong>Что это дает:</strong> вы не сталкиваетесь с ситуацией, когда «деньги вроде есть, но заплатить нечем». Проблемные долги видны заранее — есть время на маневр.</p>
+        </article>
+
+        <article class="card">
+          <h3>Налоговый учет</h3>
+          <p>Проверяю состояние бухгалтерского учета, выявляю возможные налоговые риски.</p>
+          <p class="benefit"><strong>Что это дает:</strong> вы понимаете, где уязвимые места, и можете устранить их до того, как они станут проблемой.</p>
+        </article>
+
+        <article class="card">
+          <h3>Автоматизация</h3>
+          <p>Профессионально работаю в Excel и Google Sheets. Настраиваю отчеты так, чтобы информация была оперативной и понятной — без ручного пересчета и хаоса в файлах.</p>
+          <p class="benefit"><strong>Что это дает:</strong> отчетность формируется быстро и единообразно. Вы и ваши сотрудники видите одни и те же цифры в одном формате.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="remote">
+    <div class="wrap">
+      <h2>Как я работаю удаленно</h2>
+      <div class="remote-grid">
+
+        <div class="remote-item">
+          <h3>Прозрачные точки контроля</h3>
+          <p>Мы согласовываем график: когда вы получаете промежуточные результаты, когда — финальные. Вы всегда знаете, на каком этапе задача.</p>
+        </div>
+
+        <div class="remote-item">
+          <h3>Понятные каналы связи</h3>
+          <p>Регулярные созвоны для обсуждения статуса и решений. Оперативные вопросы — в согласованном мессенджере или по почте.</p>
+        </div>
+
+        <div class="remote-item">
+          <h3>Безопасность данных</h3>
+          <p>Готова работать по NDA. Передачу информации веду только через защищенные каналы. Доступ к данным открываю на согласованных условиях.</p>
+        </div>
+
+        <div class="remote-item">
+          <h3>Асинхронность без потери качества</h3>
+          <p>Если вам удобнее получать обновления текстом или в таблице, а не на созвонах — это тоже рабочий вариант. Подстраиваюсь под ваш ритм.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="pain">
+    <div class="wrap">
+      <h2>С чем ко мне обычно приходят</h2>
+      <ul class="pain">
+        <li>«У меня несколько направлений, и я не понимаю, какое из них реально зарабатывает»</li>
+        <li>«Деньги уходят, а куда — непонятно. Хочу видеть движение средств оперативно»</li>
+        <li>«Боюсь налоговых проверок, потому что в учете есть пробелы»</li>
+        <li>«Дебиторка растет, часть долгов уже проблемные — нужен контроль»</li>
+        <li>«Отчеты делаются вручную по три дня, хочу автоматизировать»</li>
+      </ul>
+      <p class="pain-note">Если хотя бы одна из этих ситуаций вам знакома — мы можем обсудить, как это исправить.</p>
+    </div>
+  </section>
+
+  <section id="formats">
+    <div class="wrap">
+      <h2>Форматы сотрудничества</h2>
+      <ul class="formats">
+        <li><strong>Проектная работа</strong> — внедрение управленческого учета, настройка отчетности, автоматизация, разовый аудит.</li>
+        <li><strong>Абонентское сопровождение</strong> — регулярный анализ, контроль расчетов, поддержка управленческого учета.</li>
+        <li><strong>Консультации</strong> — точечные вопросы по налогам, учету или анализу.</li>
+      </ul>
+      <p class="note">Формат и объем обсуждаем индивидуально — под вашу задачу и этап бизнеса.</p>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="wrap">
+      <h2>Контакты</h2>
+      <p class="cta">Если вам нужен человек, который наведет порядок в цифрах и поможет видеть четкую картину состояния бизнеса, — буду рада обсудить варианты сотрудничества.</p>
+      <ul class="contact-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="mailto:example@example.com">Email</a></li>
+        <li><a href="#">Профиль на платформе</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Елена. Финансовый анализ · Управленческий учет</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
